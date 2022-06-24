@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #919191;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#topo{
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 980px;
+    height: 50px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid; /*Como se fosse o Flexbox*/
+    grid-template-columns: 350px 630px; /*Primeira coluna com 350px a segunda com 630px*/
+}
+header #header-contato{
+    text-align: right;
+}
+/*inicio - configurar todos os h...*/
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 0 0;
+    font-size: 1.5em; /*o em faz no ex: 1.5x o tamanho da fonte pai 14px no caso por causa do body*/
+    font-weight: normal; /*Tirando o negrito*/
+}
+#grupo h1{
+    font-size: 2em;
+}
+#grupo h2{
+    font-size: 1em;
+}
+/*Fim - até aqui explicar de uma vez só*/
+
+header #header-contato li{
+    display: inline-block;
+    border-left: 1px solid #c0bab6;
+    padding: 0 0 0 15px; /*primeiro zero top->right->bottom->left*/
+    margin: 0 0 0 15px;
+}
+header #header-contato li:first-child{ /*Vai remover a barra do primeiro item*/
+    margin: 0;
+    padding: 0;
+    border: none; /*None: Nenhum*/
+}
+#topo, #topo a{ /*formatando a tag a dentro do topo*/
+    color: #C0BAB6;
+    background-color: #333333;
+    text-decoration: none; /*Tira a linha do link*/
+
+}
+/*alinhar o icone ao texto, icone email e telefone*/
+span.material-icons{
+    vertical-align: middle; /*centralizar o texto ao lado do icone*/
+}
+
+/*menu*/
+a{
+    color: #FF9900;
+    text-decoration: none;
+}
+nav{
+    width: 980px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+nav ul{
+    margin: 0;
+    list-style: none; /*Retira as bolinhas da frente do link*/
+    text-transform: uppercase; /*Botar todas as letras maisculas*/
+    font-size: 12px;
+}
+nav li{
+    float: left; /*Se fosse display: inline-block também teria o mesmo resultado*/
+    margin: 0 30px 0 0;
+}
+nav li a{
+    display: block;
+    padding: 20px 0; /*Quando é usado 2 numeros 1º - top e bottom e o 2º - left e right*/
+    font-weight: bold;
+}
+nav.home li.link_home a, nav a:hover{
+    color: #919191
+}
+/*main*/
+main{
+    width: 980px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row; /*column*/
+    justify-content: center; /*space-between || space-around*/
+    align-items: center; /*baseline || flex-end*/
+    flex-wrap: wrap; /*[nowrap | wrap | wrap-reserve]*/
+    row-gap: 10px;
+    column-gap: 40px;
+}
+.sectionMain{
+    width: 190px;
+    height: 300px;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+    padding: 10px;
+}
+.sectionMain h1{
+    text-align: center;   
+}
+.sectionMain p{
+    line-height: 20px;
+    text-align: justify;
+}
+.sectionMain article{
+    height: 250px;
+}
+.sectionMain footer{
+    text-align: center;
+}
+/*botões do main articles*/
+.botao{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding: 5px 15px;
+}
+a.botao{
+    color: #FFF;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.botao.saiba_mais_caminhoes{
+    background: linear-gradient(to right, #830133, #b45a84);
+    text-shadow: 1px 1px 0 #000;
+    border-color: 3px #98Ba55;
+}
+.botao.saiba_mais_caminhoes:hover{
+    color: #7C9B41;
+    border-color: #7C9B41;
+}
+.botao.saiba_mais_rastreamento{
+    background: linear-gradient(to right, #830133, #b45a84);
+    text-shadow: 1px 1px 0 #000;
+    border-color: 3px #98Ba55;
+}
+.botao.saiba_mais_rastreamento:hover{
+    color: #7C9B41;
+    border-color: #7C9B41;
+}
+.botao.saiba_mais_smartphone{
+    background: linear-gradient(to right, #830133, #b45a84);
+    text-shadow: 1px 1px 0 #000;
+    border-color: 3px #98Ba55;
+}
+.botao.saiba_mais_smartphone:hover{
+    color: #7C9B41;
+    border-color: #7C9B41;
+}
+#sectionCliente{
+    width: 100%;
+    height: 320px;
+    background-color: #FFF;
+}
+#sectionCliente h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#conteudoCliente{
+    border: 1px solid red;
+    height: 100px;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+}
+#conteudoCliente article{
+    border: 4px solid #919191;
+    margin: 10px;
+    border-radius: 10px;
+
+}
